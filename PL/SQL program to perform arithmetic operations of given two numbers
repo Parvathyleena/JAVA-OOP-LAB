@@ -1,0 +1,18 @@
+SQL> set serveroutput on;
+SQL> declare
+  2    num1 number;
+  3    num2 number;
+  4    num3 number;
+  5    begin
+  6    num1:=20;
+  7    num2:=15;
+  8   num3:=num1+num2;
+  9    dbms_output.put_line('The sum of  '||num1||'  and  '||num2||'  is  '||num3);
+ 10    num3:=num1-num2;
+ 11    dbms_output.put_line('The subtraction of  '||num1||'  and  '||num2||'  is'||num3);
+ 12   num3:=num1*num2;
+ 13    dbms_output.put_line('The multiplication of  '||num1||'  and  '||num2||'is  '||num3);
+ 14    num3:=num1/num2;
+ 15    dbms_output.put_line('The division of  '||num1||'  and  '||num2||'  is  '||num3);
+ 16    end;
+ 17      /
