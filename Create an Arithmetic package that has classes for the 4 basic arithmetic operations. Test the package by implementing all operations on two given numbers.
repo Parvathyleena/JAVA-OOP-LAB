@@ -1,0 +1,76 @@
+Add.java//file
+---------------
+package Arithmatic;
+public class Add
+{
+public int sum(int x,int y)
+{
+return x+y;
+}
+}
+
+Mult.java//file
+-----------------
+package Arithmatic;
+public class Mult
+{
+public int Product(int x,int y)
+{
+return x*y;
+}
+}
+
+Subtract.java//file
+-------------------
+package Arithmatic;
+public class Subtract
+{
+public int diff(int x,int y)
+{
+return x-y;
+}
+}
+
+Div.java//file
+----------------
+package Arithmatic;
+public class Div
+{
+public double Quotient(int x,int y)
+{
+return x/y;
+}
+}
+
+Operations.java//file
+-----------------------
+import Arithmatic.*;
+class Operations
+{
+    public static void main(String[] args)
+    {
+        Add ob1 = new Add();
+
+        Subtract ob2 = new Subtract();
+        int a= ob2.diff(5,3);
+        Mult ob3 = new Mult();
+        int b= ob3.Product(5,3);
+        Div ob = new Div();
+        double c= ob.Quotient(2,2);
+        int s=ob1.sum(1,2);
+        System.out.println("Subtracted value:" + a ) ;
+        System.out.println("Multiplied  value:" + b ) ;
+        System.out.println("sum value:" + s ) ;
+        System.out.println("Divided value:" + c ) ;
+
+    }
+}
+
+OUTPUT
+----------------
+mlm@mlm-desktop:~/Desktop/JAVA LAB PARVATHY $ javac Operations.java
+mlm@mlm-desktop:~/Desktop/JAVA LAB PARVATHY $ java Operations
+Subtracted value:2
+Multiplied  value:15
+sum value:3
+Divided value:1.0
